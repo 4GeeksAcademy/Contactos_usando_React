@@ -1,5 +1,5 @@
 import React from "react";
-import { library, icon } from '@fortawesome/fontawesome-svg-core'
+//import { library, icon } from '@fortawesome/fontawesome-svg-core'
 
 const ContactCard = (props) => {
     const contact = props.object;
@@ -13,14 +13,14 @@ const ContactCard = (props) => {
                 <div className="col-md-6">
                     <div className="card-body">
                         <h5 className="card-title">{contact.full_name}</h5>
-                        <p className="card-text"><i className="fa-solid fa-location-dot m-1"></i>{contact.address}</p>
-                        <p className="card-text"><i className="fa-solid fa-phone-flip m-1"></i>{contact.phone}</p>
-                        <p className="card-text"><i className="fa-solid fa-envelope m-1"></i>{contact.email}</p>
+                        <p className="card-text"><i className="fas fa-map-marker-alt m-1"></i>{contact.address}</p>
+                        <p className="card-text"><i className="fas fa-phone m-1"></i>{contact.phone}</p>
+                        <p className="card-text"><i className="fas fa-envelope m-1"></i>{contact.email}</p>
                     </div>
                 </div>
                 <div className= "col-md-2 text-end">
-                    <button onClick={props.edit} className="mx-4"><i className="fa-solid fa-pencil"></i></button>                    
-                    <button onClick={props.delete} className="mx-4"><i className="fa-solid fa-trash"></i></button>
+                    <button onClick={props.edit} className="mx-4"><i className="fas fa-edit"></i></button>                    
+                    <button onClick={props.delete} className="mx-4"><i className="fas fa-trash"></i></button>
                 </div>
             </div>                        
             
